@@ -19,15 +19,15 @@ export default class Experience extends Component {
       {
         title: 'sr. software developer',
         location: '@avanade',
-        locationUrl: '',
+        locationUrl: 'https://www.avanade.com/',
         description:
           'Frontend, Sharepoint and Xamarin developer with C# backend and SQLServer database',
-        date: '2019-today'
+        date: '2019-present'
       },
       {
         title: 'software developer',
         location: '@avanade',
-        locationUrl: '',
+        locationUrl: 'https://www.avanade.com/',
         description:
           'Frontend, Sharepoint and Xamarin developer with C# backend and SQLServer database',
         date: '2018-2019'
@@ -35,34 +35,34 @@ export default class Experience extends Component {
       {
         title: 'software analyst',
         location: '@joanajuliao',
-        locationUrl: 'instagram',
+        locationUrl: 'https://www.instagram.com/joanajuliaomarca/',
         description: 'Frontend and PHP developer with MySQL database',
         date: '2016-2018'
       },
       {
         title: 'jr. software developer',
         location: '@allen',
-        locationUrl: '',
+        locationUrl: 'http://allen.com.br/',
         description:
-          'Frontend, Sharepoint and Xamarin developer with C# backend and SQLServer database',
+          'Frontend and Sharepoint developer with C# backend and SQLServer database',
         date: '2014-2016'
       }
     ],
     education: [
       {
-        title: 'react/react-native/node',
+        title: 'bootcamp rocketseat',
         location: '@rocketseat',
-        locationUrl: '',
+        locationUrl: 'https://rocketseat.com.br/',
         description:
-          'Nulla malesuada orci ac mauris tincidunt, eget gravida sapien lobortis.',
+          'An intensive bootcamp focused in react, react native and nodejs. ',
         date: '2019-2019'
       },
       {
         title: 'bsc. computer engineering',
         location: '@ecomp-poli-upe',
-        locationUrl: '',
+        locationUrl: 'http://upe.poli.br/',
         description:
-          'Nulla malesuada orci ac mauris tincidunt, eget gravida sapien lobortis. Integer aliquet aliquam ipsum at egestas.',
+          "Bachelor's degree in computer engineering attend in Universidade de Pernambuco",
         date: '2008-2014'
       }
     ]
@@ -73,17 +73,19 @@ export default class Experience extends Component {
       <Container>
         <Column>
           <Wrapper>
-            <Title>experience</Title>
+            <Title>education</Title>
             <Separator>.</Separator>
-            {this.state.experiences.map(exp => {
+            {this.state.education.map(edu => {
               return (
-                <Item key={exp.title + Math.random()}>
-                  <ItemTitle>{exp.title}</ItemTitle>
-                  <Location>{exp.location}</Location>
-                  <Description>
-                    <div>{exp.description}</div>
-                  </Description>
-                  <Date>{exp.date}</Date>
+                <Item key={edu.title + Math.random()}>
+                  <ItemTitle>{edu.title}</ItemTitle>
+                  <Location
+                    onClick={() => window.open(edu.locationUrl, '_blank')}
+                  >
+                    {edu.location}
+                  </Location>
+                  <Description>{edu.description}</Description>
+                  <Date>{edu.date}</Date>
                 </Item>
               )
             })}
@@ -91,15 +93,21 @@ export default class Experience extends Component {
         </Column>
         <Column>
           <Wrapper>
-            <Title>education</Title>
+            <Title>experience</Title>
             <Separator>.</Separator>
-            {this.state.education.map(edu => {
+            {this.state.experiences.map(exp => {
               return (
-                <Item key={edu.title + Math.random()}>
-                  <ItemTitle>{edu.title}</ItemTitle>
-                  <Location>{edu.location}</Location>
-                  <Description>{edu.description}</Description>
-                  <Date>{edu.date}</Date>
+                <Item key={exp.title + Math.random()}>
+                  <ItemTitle>{exp.title}</ItemTitle>
+                  <Location
+                    onClick={() => window.open(exp.locationUrl, '_blank')}
+                  >
+                    {exp.location}
+                  </Location>
+                  <Description>
+                    <div>{exp.description}</div>
+                  </Description>
+                  <Date>{exp.date}</Date>
                 </Item>
               )
             })}

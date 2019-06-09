@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   padding: 0 5%;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 `
 const Wrapper = styled.div`
   flex-direction: column;

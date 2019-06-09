@@ -38,7 +38,7 @@ export default class Header extends Component {
               </MenuItem>
               <MenuItem onClick={() => console.log('exp')}>exp</MenuItem>
               <MenuItem onClick={() => console.log('skills')}>skills</MenuItem>
-              <MenuItem onClick={() => console.log('works')}>projects</MenuItem>
+              {/* <MenuItem onClick={() => console.log('works')}>projects</MenuItem> */}
               <MenuItem onClick={() => console.log('github')}>github</MenuItem>
             </Menu>
           )}

@@ -9,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   height: 200px;
   z-index: -99;
+  margin-bottom: 20px;
 `
 const Avatar = styled.img`
   position: absolute;
@@ -30,7 +31,7 @@ const Avatar = styled.img`
 
 const Separator = styled.div`
   position: absolute;
-  width: 90%;
+  width: 85%;
   margin-top: 1.7%;
   border: 0.5px solid ${Colors.darker};
 `
