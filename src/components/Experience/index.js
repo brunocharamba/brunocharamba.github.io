@@ -77,7 +77,7 @@ export default class Experience extends Component {
             <Separator>.</Separator>
             {this.state.experiences.map(exp => {
               return (
-                <Item>
+                <Item key={exp.title + Math.random()}>
                   <ItemTitle>{exp.title}</ItemTitle>
                   <Location>{exp.location}</Location>
                   <Description>
@@ -95,7 +95,7 @@ export default class Experience extends Component {
             <Separator>.</Separator>
             {this.state.education.map(edu => {
               return (
-                <Item>
+                <Item key={edu.title + Math.random()}>
                   <ItemTitle>{edu.title}</ItemTitle>
                   <Location>{edu.location}</Location>
                   <Description>{edu.description}</Description>

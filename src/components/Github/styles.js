@@ -16,6 +16,11 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   text-align: right;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 `
 const Separator = styled.div`
   margin-bottom: 15px;
@@ -35,10 +40,15 @@ const Card = styled.div`
   margin-right: 10px;
   padding: 15px;
   border: 1px solid ${Colors.dark};
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `
 const CardTitle = styled.div`
   font-size: 14px;
   font-weight: bolder;
+  cursor: pointer;
 `
 const CardDescription = styled.div`
   margin-top: 10px;

@@ -39,8 +39,8 @@ export default class Github extends Component {
 
   loadRepositories = async () => {
     try {
-      let { data } = await api.get('/users/brunocharamba/repos')
-      data = data.filter(d => !d.fork)
+      let { data } = await api.get('/users/brunocharamba/repos?type=owner')
+      data = data.filter((dt, index) => !dt.fork && index < 4)
       this.setState({ repositories: data })
     } catch (e) {
       console.log(e)
@@ -56,7 +56,9 @@ export default class Github extends Component {
           {this.state.repositories.map(r => {
             return (
               <Card key={r.id}>
-                <CardTitle>{r.name}</CardTitle>
+                <CardTitle onClick={() => window.open(r.html_url, '_blank')}>
+                  {r.name}
+                </CardTitle>
                 <CardDescription>{r.description}</CardDescription>
                 <CardBottom>
                   {r.language} | forks: {r.forks} | issues:{' '}

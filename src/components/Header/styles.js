@@ -20,6 +20,12 @@ const Avatar = styled.img`
   border: 5px solid ${Colors.white};
   border-radius: 50%;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    width: 20%;
+    margin-left: 0;
+    left: auto;
+  }
 `
 
 const Separator = styled.div`
