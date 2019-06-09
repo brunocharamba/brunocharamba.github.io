@@ -25,6 +25,10 @@ export default class Header extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
+  handleClick = section => {
+    this.props.onScroll(section.target.textContent)
+  }
+
   render() {
     return (
       <Fragment>
@@ -33,13 +37,19 @@ export default class Header extends Component {
           <Separator />
           {this.state.width > 768 && (
             <Menu>
-              <MenuItem onClick={() => console.log('aboutme')}>
+              <MenuItem onClick={section => this.handleClick(section)}>
                 aboutme
               </MenuItem>
-              <MenuItem onClick={() => console.log('exp')}>exp</MenuItem>
-              <MenuItem onClick={() => console.log('skills')}>skills</MenuItem>
-              {/* <MenuItem onClick={() => console.log('works')}>projects</MenuItem> */}
-              <MenuItem onClick={() => console.log('github')}>github</MenuItem>
+              <MenuItem onClick={section => this.handleClick(section)}>
+                exp
+              </MenuItem>
+              <MenuItem onClick={section => this.handleClick(section)}>
+                skills
+              </MenuItem>
+              {/* <MenuItem onClick={section => this.handleClick(section)}>projects</MenuItem> */}
+              <MenuItem onClick={section => this.handleClick(section)}>
+                github
+              </MenuItem>
             </Menu>
           )}
         </Container>

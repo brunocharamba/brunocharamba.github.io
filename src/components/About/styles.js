@@ -21,6 +21,10 @@ const Description = styled.div`
   color: ${Colors.darker};
   text-align: right;
   padding-left: 55%;
+
+  @media (max-width: 768px) {
+    padding-left: 10%;
+  }
 `
 const Separator = styled.div`
   margin-bottom: 10px;
@@ -29,6 +33,12 @@ const Separator = styled.div`
 const ButtonWrapper = styled.div`
   margin-top: 20px;
   text-align: right;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 `
 const Button = styled.a`
   margin-left: 20px;
@@ -41,6 +51,11 @@ const Button = styled.a`
   &:hover {
     background-color: ${Colors.darker};
     color: ${Colors.white};
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 15px;
   }
 `
 
