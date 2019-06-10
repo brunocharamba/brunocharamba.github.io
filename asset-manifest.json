@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brunocharamba.github.io/static/css/main.01d3bfa1.chunk.css",
-    "main.js": "/brunocharamba.github.io/static/js/main.95c1056a.chunk.js",
-    "main.js.map": "/brunocharamba.github.io/static/js/main.95c1056a.chunk.js.map",
-    "runtime~main.js": "/brunocharamba.github.io/static/js/runtime~main.118c3d1f.js",
-    "runtime~main.js.map": "/brunocharamba.github.io/static/js/runtime~main.118c3d1f.js.map",
-    "static/js/2.63c79f94.chunk.js": "/brunocharamba.github.io/static/js/2.63c79f94.chunk.js",
-    "static/js/2.63c79f94.chunk.js.map": "/brunocharamba.github.io/static/js/2.63c79f94.chunk.js.map",
-    "index.html": "/brunocharamba.github.io/index.html",
-    "precache-manifest.2bf253f4adb2fb3a355c3bf350ac551f.js": "/brunocharamba.github.io/precache-manifest.2bf253f4adb2fb3a355c3bf350ac551f.js",
-    "service-worker.js": "/brunocharamba.github.io/service-worker.js",
-    "static/css/main.01d3bfa1.chunk.css.map": "/brunocharamba.github.io/static/css/main.01d3bfa1.chunk.css.map",
-    "static/media/avatar.jpeg": "/brunocharamba.github.io/static/media/avatar.4d145068.jpeg"
+    "main.css": "/myresume/static/css/main.01d3bfa1.chunk.css",
+    "main.js": "/myresume/static/js/main.95c1056a.chunk.js",
+    "main.js.map": "/myresume/static/js/main.95c1056a.chunk.js.map",
+    "runtime~main.js": "/myresume/static/js/runtime~main.6f2b030a.js",
+    "runtime~main.js.map": "/myresume/static/js/runtime~main.6f2b030a.js.map",
+    "static/js/2.faf03bb5.chunk.js": "/myresume/static/js/2.faf03bb5.chunk.js",
+    "static/js/2.faf03bb5.chunk.js.map": "/myresume/static/js/2.faf03bb5.chunk.js.map",
+    "index.html": "/myresume/index.html",
+    "precache-manifest.e69dcdd8a504faa14aa6249eae58ecc1.js": "/myresume/precache-manifest.e69dcdd8a504faa14aa6249eae58ecc1.js",
+    "service-worker.js": "/myresume/service-worker.js",
+    "static/css/main.01d3bfa1.chunk.css.map": "/myresume/static/css/main.01d3bfa1.chunk.css.map",
+    "static/media/avatar.jpeg": "/myresume/static/media/avatar.4d145068.jpeg"
   }
 }
