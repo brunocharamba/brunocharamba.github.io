@@ -16,13 +16,19 @@ import {
 export default class Experience extends Component {
   state = {
     experiences: [
+      title: 'software analyst',
+        location: '@joanajuliao',
+        locationUrl: 'https://www.instagram.com/joanajuliaomarca/',
+        description: 'Frontend and Backend developer with MySQL/Mongo databases, React and Node.',
+        date: '2019-2020'
+      },
       {
         title: 'sr. software developer',
         location: '@avanade',
         locationUrl: 'https://www.avanade.com/',
         description:
           'Frontend, Sharepoint and Xamarin developer with C# backend and SQLServer database',
-        date: '2019-present'
+        date: '2019-2019'
       },
       {
         title: 'software developer',
