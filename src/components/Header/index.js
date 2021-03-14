@@ -38,7 +38,7 @@ export default class Header extends Component {
           {this.state.width > 768 && (
             <Menu>
               <MenuItem onClick={section => this.handleClick(section)}>
-                aboutme
+                !aboutme
               </MenuItem>
               <MenuItem onClick={section => this.handleClick(section)}>
                 exp
