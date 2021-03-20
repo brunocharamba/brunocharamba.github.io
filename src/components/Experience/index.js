@@ -17,6 +17,14 @@ export default class Experience extends Component {
   state = {
     experiences: [
       {
+        title: "software engineer",
+        location: "@SiDi",
+        locationUrl: "https://www.sidi.org.br/",
+        description:
+          ".NET developer with UWP/WPF projects.",
+        date: "2020-2021",
+      },
+      {
         title: "software analyst",
         location: "@joanajuliao",
         locationUrl: "https://www.instagram.com/joanajuliaomarca/",
