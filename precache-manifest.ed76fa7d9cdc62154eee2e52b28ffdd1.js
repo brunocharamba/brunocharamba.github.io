@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0b357773bc788d036381a3e0c9e8118",
+    "revision": "b132ea0846b99e55c40869e35ed05b17",
     "url": "/brunocharamba.github.io/index.html"
   },
   {
-    "revision": "af25054db1cc8ddbafac",
+    "revision": "32323d80db5323a1eb7e",
     "url": "/brunocharamba.github.io/static/css/main.01d3bfa1.chunk.css"
   },
   {
-    "revision": "8c20fa4755322d4ddbdf",
-    "url": "/brunocharamba.github.io/static/js/2.1a3ad935.chunk.js"
+    "revision": "1eb449402498a3fb3961",
+    "url": "/brunocharamba.github.io/static/js/2.89b3c00c.chunk.js"
   },
   {
-    "revision": "af25054db1cc8ddbafac",
-    "url": "/brunocharamba.github.io/static/js/main.cba0eaa8.chunk.js"
+    "revision": "32323d80db5323a1eb7e",
+    "url": "/brunocharamba.github.io/static/js/main.b3c3858e.chunk.js"
   },
   {
     "revision": "b1cf0cad8198ae0786c6",
